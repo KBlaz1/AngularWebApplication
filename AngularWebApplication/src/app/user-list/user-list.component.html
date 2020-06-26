@@ -1,0 +1,24 @@
+<h3>User list</h3>
+
+<table class="user-list" >
+  <thead>
+    <tr>
+      <th class="column-left">Avatar</th>
+      <th class="column-right">Uporabniško ime</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr href="$" *ngFor="let user of users | async">
+        <!--<td><a href= "">{{ user.avatar }}</a></td>-->
+        <td>
+          <a [routerLink]="['/users', user.idUser]">
+            <img src="../../assets/images/{{ user.avatar }}">
+          </a>
+        </td>
+        <td>
+          <a [routerLink]="['/users', user.idUser]">{{ user.username }}</a>
+        </td>
+    </tr>
+  </tbody>
+</table>

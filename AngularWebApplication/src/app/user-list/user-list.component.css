@@ -1,0 +1,41 @@
+.user-list {
+  border: 5px solid #D62244;
+  border-radius: 5px;
+}
+
+.column-left {
+  width: 30%;
+}
+
+.user-list, th, td {
+  border-spacing: 0px;
+}
+
+th, td {
+  text-align: left;
+  padding: 15px;
+}
+
+.user-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-list tr:nth-child(even) {
+  background-color: #F4C3CC;
+}
+
+.user-list tr:nth-child(odd) {
+  background-color: white;
+}
+
+.user-list th {
+  background-color: #D62244;
+  color: white;
+}
+
+.user-list img {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #D62244;
+}

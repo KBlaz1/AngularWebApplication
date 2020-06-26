@@ -1,0 +1,12 @@
+<table *ngIf="user">
+  <tr>
+    <td>
+      <img src="../../assets/images/{{ user.avatar }}">
+    </td>
+    <td>
+      <h4><span>Uporabniško ime: </span> {{ user.username }}</h4>
+      <h4><span>Opis: </span>{{ user.description }}</h4>
+      <button routerLink="/users">Nazaj</button>
+    </td>
+  </tr>
+</table>
